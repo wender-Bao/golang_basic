@@ -5,8 +5,11 @@ import (
 )
 
 func main() {
-
-	fmt.Println("hello world!")
-	
+	var a=1
+	var b=2
+	var c = a+
+	b
+	fmt.Println(a)
+	fmt.Println(c)
 
 }
