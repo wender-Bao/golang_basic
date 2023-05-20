@@ -2,14 +2,19 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
-func main() {
-	var a=1
-	var b=2
-	var c = a+
-	b
-	fmt.Println(a)
-	fmt.Println(c)
+var c chan int
 
+func ready(w string,sec int){
+	time.Sleep(time.Duration(sec) * time.Second)
+}
+
+func main(){
+ 
+	c = make(chan int)
+	go ready("Tea",2)
+	go ready("Coffee",1)
+	fmt.Println()
 }
